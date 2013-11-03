@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<!-- 常量的配置 -->
+	<!-- struts2的后缀 -->
+	<constant name="struts.action.extension" value="action,do,go" />
+	<constant name="struts.server.static.browserCache" value="false" />
+	<!-- 设置Struts2的默认主题为simple --> 
+	<constant name="struts.ui.theme" value="simple" />
+	<!-- 编码方式 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+
+	<!-- 浏览器静态缓存最好处于关闭状态 -->
+	<constant name="struts.serve.static.browserCache" value="false" />
+
+	<!-- struts.xml文件当被修改后 重新加载，开发阶段最好打开 -->
+	<constant name="struts.configuration.xml.reload" value="true" />
+
+	<!-- 处于开发阶段 最好把开发模式打开 会打印更多的详细错误信息 -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 设置临时保存的路径 <constant name="struts.multipart.saveDir" value="f:\\temp\\"/> 
+		设置文件上传的大小 ,这个值必须大于等于拦截器中的值 <constant name="struts.multipart.maxSize" value="10485760"/> 
+		国际化资源文件的基本名称 <constant name="struts.custom.i18n.resources" value="/"/> -->
+	<constant name="struts.configuration.xml.reload" value="true" />
+
+</struts>
