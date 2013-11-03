@@ -1,0 +1,11 @@
+json需要那些类库进行支持
+    json-lib-**-jdk**.jar　json的核心包
+其他jar包
+      ezmorph-***.jar
+      morph-***.jar
+      morph-sandbox--**.jar
+        这三个包都是完成bean与bean之间的复制的包。
+使用apache的jar
+     commons-beanutils--**.jar 复制
+     commons-collections---***.jar对java.util的增强
+     commons-logging-***日志包

@@ -1,0 +1,55 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<include file="struts-constant.xml" />
+
+ 	<package name="test" namespace="/book" extends="json-default">
+
+		<action name="UserAction_*" class="com.ehl.addressbook.action.UserAction"
+			method="{1}">
+
+			<result name="checkName" type="json">
+				<param name="root">msg</param>
+				<param name="includeProperties">msg</param>
+			</result>
+
+			<result name="keyVals" type="json">
+				<param name="includeProperties">users\[\d+\]\.name</param>
+			</result>
+			<result name="input">/index.jsp</result>
+
+		</action>
+
+	</package> 
+	<package name="addbook" namespace="/addbook" extends="struts-default">
+<!--  	 	<action name="userAction" class="com.ehl.addressbook.action.UserAction">
+
+			<result name="checkName" type="json">
+				<param name="root">msg</param>
+				<param name="includeProperties">msg</param>
+			</result>
+
+			<result name="keyVals" type="json">
+				<param name="includeProperties">users\[\d+\]\.name</param>
+			</result>
+			<result name="input">/index.jsp</result>
+		</action>  -->
+		<action name="addressbookAction" class="com.ehl.addressbook.action.AddressbookAction">
+<!-- 
+			<result name="checkName" type="json">
+				<param name="root">msg</param>
+				<param name="includeProperties">msg</param>
+			</result>
+
+			<result name="keyVals" type="json">
+				<param name="includeProperties">users\[\d+\]\.name</param>
+			</result>
+			<result name="input">/index.jsp</result> -->
+			<result name="input">/addressbook.jsp</result>
+			<result type="plainText" /> 
+		</action>
+		<action name="zTreeAction" class="com.ehl.addressbook.action.ZTreeAction">
+			<result type="httpheader"></result>
+		</action>
+    </package>
+</struts>

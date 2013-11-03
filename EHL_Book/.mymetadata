@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="EHL_Book"
+  id="myeclipse.1383186815859"
+  context-root="/EHL_Book"
+  j2ee-spec="5.0"
+  archive="EHL_Book.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
